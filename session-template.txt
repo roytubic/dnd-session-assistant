@@ -100,9 +100,9 @@ CLUES
 DIALOG:
 
 
-POTENTIAL SKILL CHECKS (require a DC # skill check)
-Environmental hazards? 
-Charm / persuade? 
-Perception / notice? 
+POTENTIAL SKILL CHECKS 
+Environmental hazards? (require a DC # skill check)
+Charm / persuade? (require a DC # skill check)
+Perception / notice? (require a DC # skill check)
 
 BIG CLUE TO REVEAL - NO ROLLS REQUIRED

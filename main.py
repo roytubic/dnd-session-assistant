@@ -14,44 +14,6 @@ client = Groq(
 model_id = "meta-llama/Meta-Llama-3-70B-Instruct"
 tokenizer = AutoTokenizer.from_pretrained(model_id, token=os.environ.get("HUGGINGFACE_TOKEN"))
 
-conversation_history = [
-    {
-        "role": "system",
-        "content": "You are a helpful assistant.",
-    },
-]
-
-def count_tokens(messages):
-    total_tokens = 0
-    for message in messages:
-        tokens = tokenizer.encode(message["content"])
-        total_tokens += len(tokens)
-    return total_tokens
-
-def summarise_conversation(conversation_history):
-    summary_prompt = conversation_history + [
-        {
-        "role": "user",
-        "content": "Please summarise the conversation so far."
-        }
-    ]
-
-    summary_completion = client.chat.completions.create(
-        messages=summary_prompt,
-        model="llama3-70b-8192",
-        stream=True
-    )
-
-    summary = ""
-    for chunk in summary_completion:
-        content = chunk.choices[0].delta.content
-        if content:
-            summary += content
-
-    return summary
-
-token_threshold = 1500
-
 def load_template(file_path):
     with open(file_path, 'r') as file:
         template = file.read()
@@ -74,7 +36,7 @@ Session Opening Cinematic:
 """
     for i in range(1, story_points + 1):
         session_plan += f"""
-Story point #: {inputs['story_points'][i-1]['story_point_number']} (Expected time spent on scene)
+Story point #: {i} (Expected time spent on scene)
 Date and time: {inputs['story_points'][i-1]['in_game_date']}
 GM NOTE: {inputs['story_points'][i-1]['gm_note']}
 
@@ -105,7 +67,6 @@ def collect_inputs():
 
     for i in range(1, story_points + 1):
         story_point = {}
-        story_point['story_point_number'] = input(f"Enter Story Point Number for story point {i}: ")
         story_point['in_game_date'] = input(f"Enter In-game Date for story point {i}: ")
         story_point['gm_note'] = input(f"Enter GM Note for story point {i}: ")
         story_point['scene_cinematic'] = input(f"Enter Scene Cinematic for story point {i}: ")
@@ -159,47 +120,3 @@ while True:
         print("Session Plan Complete:")
         print(expanded_session_plan)
         continue
-
-    conversation_history.append({
-    "role": "user",
-    "content": user_input
-    })
-
-    num_tokens = count_tokens(conversation_history)
-    print(f"Number of tokens: {num_tokens}")
-
-    if num_tokens > token_threshold:
-        summary = summarise_conversation(conversation_history)
-        print(f"Summarising conversation:\n{summary}")
-        conversation_history = [
-            {
-                "role": "system",
-                "content": "You are a helpful chatbot."
-            },
-            {
-                "role": "assistant",
-                "content": summary
-            }
-        ]
-
-    chat_completion = client.chat.completions.create(
-        messages=conversation_history,
-        model="llama3-70b-8192",
-        stream=True,
-        temperature=0.9,
-    )
-
-    assistant_response = ""
-    print("Chatbot: ", end='')
-    for chunk in chat_completion:
-        content = chunk.choices[0].delta.content
-        if content:
-            print(content, end="")
-            assistant_response += content
-    
-    print()
-
-    conversation_history.append({
-        "role": "assistant",
-        "content": assistant_response
-    })
