@@ -1,0 +1,108 @@
+PC’s:
+Player Character names and brief description
+
+NPC’s
+Names of the NPC’s currently traveling with the party
+Session #
+Session Opening Cinematic
+“A recap of the previous session”
+
+Scenes are then spread out into story points. Some scenes are specific, while others can range to just downtime for the characters allowing for improv.
+Story point #:  (Expected time spent on scene)
+In game date using the in game calendar
+GM NOTE: A note for the dungeon master, not to be shared with the party
+
+SCENE CINEMATIC:
+A narrative description of the scene. Should include a physical description, and what is actually occurring.
+
+LOCATION: 
+Name of the location of the scene
+Use the senses!!
+Any key points that the party could identify via passive perception
+
+WHO’S THERE:
+NPCs? Monsters? Names of the NPCs and monsters in this scene
+3 short facts about the NPCs or monsters
+One line fact about the NPC/monster
+
+What MOTIVATES the NPCs or monsters?
+A brief sentence that highlights the NPC/monsters motivation in the scene
+
+MOVE IT FORWARD:
+What is the pressure on the scene? What is the threat? Define what the urgency of the scene is to level how the party should react
+Doom Clock
+How will this raise the stakes moving into the next scene? 
+How does the threat increase? How often? 
+CLUES
+ Identify clues and key points that fill in the story that the party will need to discover with ability checks or deduction
+
+DIALOG:
+Specific dialogue that will be used by the NPC’s/monsters within the scene
+
+POTENTIAL SKILL CHECKS
+Environmental hazards? Identify hazards that will stunt the party that are from the environment (e.g rain, traps.)
+Charm / persuade? Identify a chance for charming or persuasion from the party to one of the NPCs/Monsters. Will need an identified DC
+Perception / notice? Identify any key points of the environment or of the scene that the party will not notice straight away, and will need to make an ability check to notice. The DC will need to be set
+
+BIG CLUE TO REVEAL - NO ROLLS REQUIRED
+A large key point to reveal that provides the foundation of the scene. Could be the reveal of a massive clue, or could be the start of a battle.
+
+Repeat story points (3-5 will suffice) until you have a full session plan.
+
+Battle: Quick identifying name of the battle
+Brief description of the planned battle, who’s involved, what the purpose of the battle is and any interactives or hazards that exist in the battle.
+Aftermath:
+Where do we pick up next time?
+Identify where the session ends and where it should pick up the next time. This will be decided during the session.
+
+Important consequences:
+Identify important plot points that are raised by the players to incorporate into future sessions.
+
+
+
+
+
+
+
+Story point #: Headline (expected time spent) 
+Date and time
+GM NOTE: 
+
+SCENE CINEMATIC:
+
+
+
+LOCATION: 
+
+
+Use the senses!!
+
+
+
+WHO’S THERE:
+NPCs? Monsters? 
+3 short facts about the NPCs or monsters
+
+
+
+What MOTIVATES the NPCs or monsters?
+
+
+
+MOVE IT FORWARD:
+What is the pressure on the scene? What is the threat? 
+Doom Clock
+How will this raise the stakes moving into the next scene? 
+How does the threat increase? How often? 
+CLUES
+
+
+DIALOG:
+
+
+POTENTIAL SKILL CHECKS (require a DC # skill check)
+Environmental hazards? 
+Charm / persuade? 
+Perception / notice? 
+
+BIG CLUE TO REVEAL - NO ROLLS REQUIRED
